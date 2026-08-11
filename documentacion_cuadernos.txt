@@ -16,130 +16,203 @@ SECCIÓN 1. DOCUMENTACIÓN DETALLADA DE CADA CUADERNO DE TRABAJO
 CUADERNO 01: 01-Python-Cadenas.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-Este cuaderno aborda el estudio de las cadenas de texto (strings) como una de las estructuras primitivas de información más relevantes en el diseño de algoritmos y el procesamiento masivo de datos. En el contexto de la Ciencia de Datos, la capacidad de manipular cadenas es fundamental para tareas de ingesta, saneamiento de metadatos, extracción de atributos de texto y preparación de datasets heterogéneos previos a su integración en arquitecturas de almacenamiento o motores de cómputo distribuido.
+Este cuaderno aborda el estudio de las cadenas de texto (strings) como una de las estructuras primitivas de información más relevantes 
+en el diseño de algoritmos y el procesamiento masivo de datos. En el contexto de la Ciencia de Datos, la capacidad de manipular cadenas 
+es fundamental para tareas de ingesta, saneamiento de metadatos, extracción de atributos de texto y preparación de datasets 
+heterogéneos previos a su integración en arquitecturas de almacenamiento o motores de cómputo distribuido.
 
 DESARROLLO:
-Durante el desarrollo del cuaderno se analiza detalladamente la sintaxis para definir cadenas mediante comillas simples y dobles, así como el tratamiento de caracteres alfanuméricos y especiales. Se examina en profundidad el concepto de indexación basada en cero (indexación positiva) y el recorrido desde el final mediante índices negativos. Adicionalmente, se estudian las técnicas de extracción de subcadenas (slicing) determinando rangos explícitos, la aplicación de saltos de recorrido (stride), la concatenación de variables de texto mediante el operador de adición y la replicación mediante multiplicación. Asimismo, se documenta la interpretación de secuencias de escape (tales como salto de línea \n, tabulación \t y barra invertida literal \\) y el uso de cadenas en formato crudo (raw strings r""). Finalmente, se explora el uso de métodos nativos clave como .upper() para conversión a mayúsculas, .replace() para sustitución de patrones y .find() para localización de índices, concluyendo con la solución analítica del cuestionario de autoevaluación.
+Durante el desarrollo del cuaderno se analiza detalladamente la sintaxis para definir cadenas mediante comillas simples y 
+dobles, así como el tratamiento de caracteres alfanuméricos y especiales. Se examina en profundidad el concepto de indexación 
+basada en cero (indexación positiva) y el recorrido desde el final mediante índices negativos. Adicionalmente, se estudian las 
+técnicas de extracción de subcadenas (slicing) determinando rangos explícitos, la aplicación de saltos de recorrido (stride), 
+la concatenación de variables de texto mediante el operador de adición y la replicación mediante multiplicación. Asimismo, 
+se documenta la interpretación de secuencias de escape (tales como salto de línea \n, tabulación \t y barra invertida literal \\) 
+y el uso de cadenas en formato crudo (raw strings r""). Finalmente, se explora el uso de métodos nativos clave como .upper() para conversión a mayúsculas,
+ .replace() para sustitución de patrones y .find() para localización de índices, concluyendo con la solución analítica del cuestionario de autoevaluación.
 
 CONCLUSIÓN:
-El dominio de la manipulación de cadenas de texto en Python constituye una habilidad indispensable en la ingeniería de datos. Los patrones de filtrado, transformación y búsqueda aprendidos en este módulo se traducen de forma directa a las operaciones sobre columnas de tipo StringType en marcos de trabajo masivos como Apache Spark y Databricks, garantizando una transición fluida hacia el análisis de texto a gran escala.
+El dominio de la manipulación de cadenas de texto en Python constituye una habilidad indispensable en la ingeniería de datos. Los patrones de filtrado, 
+transformación y búsqueda aprendidos en este módulo se traducen de forma directa a las operaciones sobre columnas de tipo StringType en marcos de trabajo 
+masivos como Apache Spark y Databricks, garantizando una transición fluida hacia el análisis de texto a gran escala.
 
 
 -------------------------------------------------------------------------------
 CUADERNO 02: 02-Python-Tuplas.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-El presente cuaderno está dedicado a las tuplas (tuple), definiéndolas como colecciones ordenadas e inmutables de elementos. En el procesamiento de datos, la inmutabilidad es una propiedad deseable cuando se requiere garantizar la integridad y constancia de un conjunto de registros durante el flujo de ejecución del programa, evitando alteraciones accidentales que puedan comprometer la coherencia de los resultados analíticos.
+El presente cuaderno está dedicado a las tuplas (tuple), definiéndolas como colecciones ordenadas e inmutables de elementos. En el procesamiento de datos, 
+la inmutabilidad es una propiedad deseable cuando se requiere garantizar la integridad y constancia de un conjunto de registros durante el flujo de ejecución 
+del programa, evitando alteraciones accidentales que puedan comprometer la coherencia de los resultados analíticos.
 
 DESARROLLO:
-A lo largo de la práctica se demuestra la sintaxis de declaración de tuplas mediante el uso de paréntesis y comas separadoras, permitiendo almacenar elementos pertenecientes a diversos tipos de datos (enteros, flotantes, cadenas y sub-tuplas anidadas). Se ejecutan operaciones de acceso a elementos mediante indexación positiva y negativa, extracción de fragmentos mediante slicing y navegación en estructuras complejas compuestas por tuplas dentro de tuplas. Se comprueba empíricamente el principio de inmutabilidad al intentar reasignar valores a índices específicos, constatando el error de ejecución correspondiente. Adicionalmente, se hace uso de funciones y métodos integrados como len() para consultar la longitud total, sorted() para obtener versiones ordenadas en forma de listas, así como los métodos .index() para ubicar posiciones y .count() para contabilizar frecuencias de aparición.
+A lo largo de la práctica se demuestra la sintaxis de declaración de tuplas mediante el uso de paréntesis y comas separadoras, permitiendo almacenar elementos 
+pertenecientes a diversos tipos de datos (enteros, flotantes, cadenas y sub-tuplas anidadas). Se ejecutan operaciones de acceso a elementos mediante indexación 
+positiva y negativa, extracción de fragmentos mediante slicing y navegación en estructuras complejas compuestas por tuplas dentro de tuplas. Se comprueba empíricamente
+el principio de inmutabilidad al intentar reasignar valores a índices específicos, constatando el error de ejecución correspondiente. Adicionalmente, se hace uso de 
+funciones y métodos integrados como len() para consultar la longitud total, sorted() para obtener versiones ordenadas en forma de listas, así como los métodos .index()
+para ubicar posiciones y .count() para contabilizar frecuencias de aparición.
 
 CONCLUSIÓN:
-Las tuplas proporcionan una estructura liviana y segura para el manejo de datos fijos. En entornos de cómputo paralelo y distribuido, la inmutabilidad de los datos es la piedra angular que permite la ejecución de transformaciones puras sin efectos secundarios, siendo equivalente al comportamiento inmutable de los registros en sistemas como RDDs y DataFrames de Spark.
+Las tuplas proporcionan una estructura liviana y segura para el manejo de datos fijos. En entornos de cómputo paralelo y distribuido, la inmutabilidad de los datos es 
+la piedra angular que permite la ejecución de transformaciones puras sin efectos secundarios, siendo equivalente al comportamiento inmutable de los registros en 
+sistemas como RDDs y DataFrames de Spark.
 
 
 -------------------------------------------------------------------------------
 CUADERNO 03: 03-Python-Listas.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-Este cuaderno introduce las listas (list) en Python, caracterizándolas como estructuras de datos tipo secuencia, ordenadas, indexables y completamente mutables. Las listas representan el contenedor dinámico por excelencia en Python, indispensable para la recolección, almacenamiento temporal, estructuración y manipulación continuada de conjuntos de observaciones en procesos analíticos.
+Este cuaderno introduce las listas (list) en Python, caracterizándolas como estructuras de datos tipo secuencia, ordenadas, indexables y completamente mutables. 
+Las listas representan el contenedor dinámico por excelencia en Python, indispensable para la recolección, almacenamiento temporal, estructuración y manipulación 
+continuada de conjuntos de observaciones en procesos analíticos.
 
 DESARROLLO:
-El desarrollo comprende la exploración completa de la manipulación de listas mediante corchetes, abarcando la modificación directa de valores en posiciones específicas y la alteración de su longitud. Se aplican métodos fundamentales para la edición de colecciones, tales como .append() para agregar elementos al final, .extend() para concatenar múltiples listas y la sentencia del para eliminar elementos en índices determinados. Se analiza también la conversión de cadenas de texto a listas de palabras mediante el método .split(). Un aspecto central abordado en este módulo es la distinción conceptual y práctica entre la asignación por referencia (aliasing), donde dos variables apuntan al mismo espacio de memoria, y la clonación o copia independiente de listas mediante slicing [:] o métodos dedicados, previniendo modificaciones no deseadas en colecciones compartidas.
+El desarrollo comprende la exploración completa de la manipulación de listas mediante corchetes, abarcando la modificación directa de valores en posiciones específicas 
+y la alteración de su longitud. Se aplican métodos fundamentales para la edición de colecciones, tales como .append() para agregar elementos al final, .extend() para 
+concatenar múltiples listas y la sentencia del para eliminar elementos en índices determinados. Se analiza también la conversión de cadenas de texto a listas de palabras
+mediante el método .split(). Un aspecto central abordado en este módulo es la distinción conceptual y práctica entre la asignación por referencia (aliasing), donde dos
+variables apuntan al mismo espacio de memoria, y la clonación o copia independiente de listas mediante slicing [:] o métodos dedicados, previniendo modificaciones no
+deseadas en colecciones compartidas.
 
 CONCLUSIÓN:
-La flexibilidad y mutabilidad de las listas las convierten en la herramienta básica para la acumulación y procesamiento iterativo de datos. Comprender a fondo el funcionamiento del aliasing frente al clonado es crítico para escribir código robusto en analítica de datos, evitando inconsistencias causadas por mutaciones secundarias sobre listas de datos.
+La flexibilidad y mutabilidad de las listas las convierten en la herramienta básica para la acumulación y procesamiento iterativo de datos. Comprender a fondo el 
+funcionamiento del aliasing frente al clonado es crítico para escribir código robusto en analítica de datos, evitando inconsistencias causadas por mutaciones 
+secundarias sobre listas de datos.
 
 
 -------------------------------------------------------------------------------
 CUADERNO 04: 04-Python-Conjuntos.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-Este cuaderno aborda los conjuntos (set), definidos como colecciones no ordenadas de elementos únicos e irrepetibles. Los conjuntos son la implementación computacional de la teoría de conjuntos matemática y resultan fundamentales en el procesamiento de datos cuando se requiere realizar operaciones de deduplicación rápida y comparaciones relacionales entre grupos de datos.
+Este cuaderno aborda los conjuntos (set), definidos como colecciones no ordenadas de elementos únicos e irrepetibles. Los conjuntos son la implementación computacional 
+de la teoría de conjuntos matemática y resultan fundamentales en el procesamiento de datos cuando se requiere realizar operaciones de deduplicación rápida y 
+comparaciones relacionales entre grupos de datos.
 
 DESARROLLO:
-La práctica guía la creación de conjuntos utilizando llaves o la función constructora set(), demostrando cómo la conversión directa de una lista con duplicados a un conjunto elimina de forma automática todos los elementos repetidos. Se implementan de forma rigurosa las operaciones algebraicas de conjuntos: unión (operador | o método .union()), intersección (operador & o método .intersection()), diferencia (operador - o método .difference()) y diferencia simétrica (operador ^). Asimismo, se estudian los métodos para la modificación del conjunto como .add() para agregar elementos y .remove() o .discard() para supresión, finalizando con la evaluación de relaciones lógicas entre conjuntos mediante el uso de .issubset() e .issuperset().
+La práctica guía la creación de conjuntos utilizando llaves o la función constructora set(), demostrando cómo la conversión directa de una lista con duplicados a un 
+conjunto elimina de forma automática todos los elementos repetidos. Se implementan de forma rigurosa las operaciones algebraicas de conjuntos: unión 
+(operador | o método .union()), intersección (operador & o método .intersection()), diferencia (operador - o método .difference()) y diferencia simétrica (operador ^).
+Asimismo, se estudian los métodos para la modificación del conjunto como .add() para agregar elementos y .remove() o .discard() para supresión, 
+finalizando con la evaluación de relaciones lógicas entre conjuntos mediante el uso de .issubset() e .issuperset().
 
 CONCLUSIÓN:
-La estructura de datos tipo conjunto ofrece una eficiencia algorítmica óptima para la verificación de pertenencia (con una complejidad temporal promedio de O(1)). Su aplicación es clave en tareas de limpieza de datos, tales como la identificación de valores únicos, el filtrado categórico y la validación de integridad entre diferentes fuentes de información.
+La estructura de datos tipo conjunto ofrece una eficiencia algorítmica óptima para la verificación de pertenencia (con una complejidad temporal promedio de O(1)).
+Su aplicación es clave en tareas de limpieza de datos, tales como la identificación de valores únicos, el filtrado categórico y la validación de integridad entre 
+diferentes fuentes de información.
 
 
 -------------------------------------------------------------------------------
 CUADERNO 05: 05-Python-Diccionarios.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-En este cuaderno se profundiza en el estudio de los diccionarios (dict), estructuras asociativas no ordenadas compuestas por parejas de clave y valor. Los diccionarios son indispensables en la Ciencia de Datos moderna, pues constituyen el estándar primario para el modelado de datos semiestructurados, configuraciones de sistemas y estructuras JSON utilizadas en APIs y data lakes.
+En este cuaderno se profundiza en el estudio de los diccionarios (dict), estructuras asociativas no ordenadas compuestas por parejas de clave y valor. Los diccionarios 
+son indispensables en la Ciencia de Datos moderna, pues constituyen el estándar primario para el modelado de datos semiestructurados, configuraciones de sistemas y 
+estructuras JSON utilizadas en APIs y data lakes.
 
 DESARROLLO:
-El cuaderno explica la sintaxis de instanciación mediante llaves y la definición formal de pares clave-valor (donde las claves deben ser tipos inmutables como cadenas o números). Se practican las operaciones esenciales: consulta de valores a través de sus claves asociadas, modificación de valores existentes, incorporación de nuevos pares clave-valor y eliminación de registros mediante la palabra reservada del. Se estudia la verificación preventiva de existencia de claves con el operador relacional in para evitar excepciones de tipo KeyError. Adicionalmente, se recorre el diccionario utilizando métodos inspectores como .keys() para obtener el conjunto de claves, .values() para los valores y .items() para obtener tuplas de pares clave-valor.
+El cuaderno explica la sintaxis de instanciación mediante llaves y la definición formal de pares clave-valor (donde las claves deben ser tipos inmutables como cadenas 
+o números). Se practican las operaciones esenciales: consulta de valores a través de sus claves asociadas, modificación de valores existentes, incorporación de nuevos 
+pares clave-valor y eliminación de registros mediante la palabra reservada del. Se estudia la verificación preventiva de existencia de claves con el operador relacional 
+in para evitar excepciones de tipo KeyError. Adicionalmente, se recorre el diccionario utilizando métodos inspectores como .keys() para obtener el conjunto de claves, 
+.values() para los valores y .items() para obtener tuplas de pares clave-valor.
 
 CONCLUSIÓN:
-Los diccionarios ofrecen una forma altamente intuitiva y eficiente de organizar datos heterogéneos y asociativos. El dominio de esta estructura permite interactuar fluidamente con formatos JSON, esquemas de bases de datos NoSQL y diccionarios de metadatos en flujos de trabajo avanzados de ingesta de datos.
+Los diccionarios ofrecen una forma altamente intuitiva y eficiente de organizar datos heterogéneos y asociativos. El dominio de esta estructura permite interactuar 
+fluidamente con formatos JSON, esquemas de bases de datos NoSQL y diccionarios de metadatos en flujos de trabajo avanzados de ingesta de datos.
 
 
 -------------------------------------------------------------------------------
 CUADERNO 06: 06-Python-Condiciones.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-Este cuaderno se centra en la lógica de control de flujo mediante estructuras condicionales. La evaluación de condiciones permite que los programas tomen decisiones de forma autónoma, ejecutando diferentes bloques de código según se cumplan o no ciertas premisas lógicas, lo cual es esencial para el filtrado y la clasificación de datos.
+Este cuaderno se centra en la lógica de control de flujo mediante estructuras condicionales. La evaluación de condiciones permite que los programas tomen decisiones de 
+forma autónoma, ejecutando diferentes bloques de código según se cumplan o no ciertas premisas lógicas, lo cual es esencial para el filtrado y la clasificación de datos.
 
 DESARROLLO:
-La guía detalla el uso de operadores relacionales de comparación (igualdad ==, desigualdad !=, mayor que >, menor que <, mayor o igual >=, menor o igual <=) y su combinación mediante operadores lógicos booleanos (and, or, not). Se analiza la sintaxis y semántica de la estructura condicional básica if, la evaluación en cascada mediante elif y la captura de casos por defecto a través de else. Se enfatiza la importancia de la sangría (indentation) para definir el alcance de los bloques de código y se presentan casos prácticos de evaluación de condiciones compuestas para la toma de decisiones algorítmicas.
+La guía detalla el uso de operadores relacionales de comparación (igualdad ==, desigualdad !=, mayor que >, menor que <, mayor o igual >=, menor o igual <=) y su combinación 
+mediante operadores lógicos booleanos (and, or, not). Se analiza la sintaxis y semántica de la estructura condicional básica if, la evaluación en cascada mediante elif 
+y la captura de casos por defecto a través de else. Se enfatiza la importancia de la sangría (indentation) para definir el alcance de los bloques de código y se 
+presentan casos prácticos de evaluación de condiciones compuestas para la toma de decisiones algorítmicas.
 
 CONCLUSIÓN:
-El dominio del control de flujo condicional es el pilar sobre el cual se construyen los algoritmos de limpieza, segmentación y validación de reglas de negocio. Una lógica condicional bien estructurada asegura que las transformaciones aplicadas a los datos se ejecuten de manera precisa e impecable.
+El dominio del control de flujo condicional es el pilar sobre el cual se construyen los algoritmos de limpieza, segmentación y validación de reglas de negocio. 
+Una lógica condicional bien estructurada asegura que las transformaciones aplicadas a los datos se ejecuten de manera precisa e impecable.
 
 
 -------------------------------------------------------------------------------
 CUADERNO 07: 07-Python-Bucles.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-El cuaderno analiza las estructuras de iteración o repetitivas, enfocándose en los bucles for y while. El bucle es el mecanismo fundamental que permite automatizar tareas repetitivas sobre grandes colecciones de datos, procesando elemento por elemento sin necesidad de duplicar código.
+El cuaderno analiza las estructuras de iteración o repetitivas, enfocándose en los bucles for y while. El bucle es el mecanismo fundamental que permite automatizar tareas 
+repetitivas sobre grandes colecciones de datos, procesando elemento por elemento sin necesidad de duplicar código.
 
 DESARROLLO:
-En la práctica se profundiza en la sintaxis del bucle for para recorrer secuencias iterables como listas, tuplas, cadenas y diccionarios. Se estudia el uso de la función generadora range(inicio, fin, paso) para controlar el número de iteraciones numéricas. Se presenta la función nativa enumerate(), que permite acceder simultáneamente al índice y al valor de cada elemento durante el recorrido. Por otra parte, se analiza el bucle while, cuya ejecución se mantiene mientras una condición lógica continúe siendo verdadera, examinando los mecanismos de actualización de variables de control y el uso de sentencias de interrupción como break y continue.
+En la práctica se profundiza en la sintaxis del bucle for para recorrer secuencias iterables como listas, tuplas, cadenas y diccionarios. Se estudia el uso de la 
+función generadora range(inicio, fin, paso) para controlar el número de iteraciones numéricas. Se presenta la función nativa enumerate(), que permite acceder 
+simultáneamente al índice y al valor de cada elemento durante el recorrido. Por otra parte, se analiza el bucle while, cuya ejecución se mantiene mientras una 
+condición lógica continúe siendo verdadera, examinando los mecanismos de actualización de variables de control y el uso de sentencias de interrupción como break y 
+continue.
 
 CONCLUSIÓN:
-Las estructuras iterativas resultan fundamentales para el diseño de canalizaciones de procesamiento de datos por lotes (batch processing). Comprender el comportamiento de los bucles y los iteradores permite optimizar el tiempo de ejecución y la gestión de memoria al procesar colecciones masivas de información.
+Las estructuras iterativas resultan fundamentales para el diseño de canalizaciones de procesamiento de datos por lotes (batch processing). Comprender el comportamiento 
+de los bucles y los iteradores permite optimizar el tiempo de ejecución y la gestión de memoria al procesar colecciones masivas de información.
 
 
 -------------------------------------------------------------------------------
 CUADERNO 08: 08-Python-Funciones.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-Este cuaderno está dedicado al paradigma de programación modular mediante el diseño e implementación de funciones personalizadas utilizando la palabra clave def. Las funciones permiten abstraer bloques de código lógico en unidades reutilizables, legibles y mantenibles.
+Este cuaderno está dedicado al paradigma de programación modular mediante el diseño e implementación de funciones personalizadas utilizando la palabra clave def. 
+Las funciones permiten abstraer bloques de código lógico en unidades reutilizables, legibles y mantenibles.
 
 DESARROLLO:
-Se explica la estructura formal para la definición de funciones, incluyendo la declaración de parámetros de entrada, el establecimiento de valores por defecto en los argumentos y el retorno de resultados mediante la sentencia return. Se explora minuciosamente el ámbito de las variables (scope), distinguiendo entre variables de alcance local (existentes únicamente dentro de la función) y variables globales. Adicionalmente, se fomenta el uso de buenas prácticas de programación mediante la inclusión de documentación interna (docstrings) para describir la funcionalidad, parámetros y retornos del código desarrollado.
+Se explica la estructura formal para la definición de funciones, incluyendo la declaración de parámetros de entrada, el establecimiento de valores por defecto en los 
+argumentos y el retorno de resultados mediante la sentencia return. Se explora minuciosamente el ámbito de las variables (scope), distinguiendo entre variables de 
+alcance local (existentes únicamente dentro de la función) y variables globales. Adicionalmente, se fomenta el uso de buenas prácticas de programación mediante la 
+inclusión de documentación interna (docstrings) para describir la funcionalidad, parámetros y retornos del código desarrollado.
 
 CONCLUSIÓN:
-El diseño de funciones modulares y reutilizables es indispensable en la ingeniería de software y la ciencia de datos. Permite empaquetar transformaciones complejas de datos, facilitando la creación de tuberías de procesamiento limpias, comprobables y escalables, así como la definición de funciones de usuario (UDF) en entornos distribuidos.
+El diseño de funciones modulares y reutilizables es indispensable en la ingeniería de software y la ciencia de datos. Permite empaquetar transformaciones complejas de 
+datos, facilitando la creación de tuberías de procesamiento limpias, comprobables y escalables, así como la definición de funciones de usuario (UDF) en entornos distribuidos.
 
 
 -------------------------------------------------------------------------------
 CUADERNO 09: 09_Python_Clases.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-El noveno cuaderno introduce el paradigma de Programación Orientada a Objetos (POO) en Python. La POO es un modelo de programación que permite organizar el código estructurándolo en torno a objetos que combinan estado (atributos) y comportamiento (métodos), modelando entidades del mundo real o de sistemas complejos.
+El noveno cuaderno introduce el paradigma de Programación Orientada a Objetos (POO) en Python. La POO es un modelo de programación que permite organizar el código 
+estructurándolo en torno a objetos que combinan estado (atributos) y comportamiento (métodos), modelando entidades del mundo real o de sistemas complejos.
 
 DESARROLLO:
-El módulo cubre la declaración de clases mediante la palabra reservada class, la implementación del método constructor especial __init__ y el uso del parámetro self para hacer referencia a las instancias de la clase. Se ejercita la creación de atributos de instancia y la definición de métodos para modificar dichos atributos o realizar operaciones específicas. Como actividad central y evaluada, se desarrolla de forma completa la clase Elipse, inicializada con un color de relleno rosa (pink) y un color de borde rojo (red). La clase cuenta con métodos para cambiar el ancho, cambiar el alto, cambiar el color de relleno, cambiar el color de borde y realizar el dibujado gráfico de la elipse sobre un plano cartesiano utilizando la biblioteca matplotlib.
+El módulo cubre la declaración de clases mediante la palabra reservada class, la implementación del método constructor especial __init__ y el uso del parámetro self 
+para hacer referencia a las instancias de la clase. Se ejercita la creación de atributos de instancia y la definición de métodos para modificar dichos atributos o 
+realizar operaciones específicas. Como actividad central y evaluada, se desarrolla de forma completa la clase Elipse, inicializada con un color de relleno rosa (pink) 
+y un color de borde rojo (red). La clase cuenta con métodos para cambiar el ancho, cambiar el alto, cambiar el color de relleno, cambiar el color de borde y realizar 
+el dibujado gráfico de la elipse sobre un plano cartesiano utilizando la biblioteca matplotlib.
 
 CONCLUSIÓN:
-La Programación Orientada a Objetos proporciona la estructura organizativa requerida para desarrollar librerías avanzadas y sistemas analíticos robustos. Comprender las clases y objetos permite extender bibliotecas de aprendizaje automático y adaptar componentes personalizados dentro de arquitecturas complejas de software.
+La Programación Orientada a Objetos proporciona la estructura organizativa requerida para desarrollar librerías avanzadas y sistemas analíticos robustos. Comprender las 
+clases y objetos permite extender bibliotecas de aprendizaje automático y adaptar componentes personalizados dentro de arquitecturas complejas de software.
 
 
 -------------------------------------------------------------------------------
 CUADERNO BONO: Practico_Bono_1.ipynb
 -------------------------------------------------------------------------------
 INTRODUCCIÓN:
-Este cuaderno de ejercicios prácticos actúa como un taller de consolidación y evaluación de competencias. Su objetivo es integrar y aplicar de manera conjunta todos los conceptos revisados desde el cuaderno 01 hasta el 09, enfrentando problemas lógicos mediante el uso exclusivo del lenguaje Python básico y sin recurrir a funciones o librerías no enseñadas previamente.
+Este cuaderno de ejercicios prácticos actúa como un taller de consolidación y evaluación de competencias. Su objetivo es integrar y aplicar de manera conjunta todos 
+los conceptos revisados desde el cuaderno 01 hasta el 09, enfrentando problemas lógicos mediante el uso exclusivo del lenguaje Python básico y sin recurrir a funciones 
+o librerías no enseñadas previamente.
 
 DESARROLLO:
 El cuaderno se organiza en tres bloques de dificultad progresiva:
-1. Calentamiento: Resolución de las funciones lesser_of_two_evens (evaluación de paridad y comparaciones numéricas), animal_crackers (inspección de iniciales de palabras mediante tokenización con .split() e indexación) y makes_twenty (evaluación de condiciones de suma o equivalencia a 20).
-2. Nivel 1: Implementación de old_macdonald (manipulación y conversión de caracteres específicos utilizando slicing y .upper()) y master_yoda (reorganización inversa de oraciones utilizando slicing con stride negativo [::-1] y el método .join()).
-3. Nivel 2: Solución de los algoritmos has_33 (búsqueda de elementos contiguos repetidos mediante bucles for e indexación), paper_doll (multiplicación y concatenación iterativa de caracteres) y blackjack (lógica del juego de cartas considerando la regla del as/once y la condición de exceso 'BUST').
+1. Calentamiento: Resolución de las funciones lesser_of_two_evens (evaluación de paridad y comparaciones numéricas), animal_crackers (inspección de iniciales de 
+palabras mediante tokenización con .split() e indexación) y makes_twenty (evaluación de condiciones de suma o equivalencia a 20).
+2. Nivel 1: Implementación de old_macdonald (manipulación y conversión de caracteres específicos utilizando slicing y .upper()) y master_yoda (reorganización inversa 
+de oraciones utilizando slicing con stride negativo [::-1] y el método .join()).
+3. Nivel 2: Solución de los algoritmos has_33 (búsqueda de elementos contiguos repetidos mediante bucles for e indexación), paper_doll (multiplicación y concatenación 
+iterativa de caracteres) y blackjack (lógica del juego de cartas considerando la regla del as/once y la condición de exceso 'BUST').
 
 CONCLUSIÓN:
-La resolución completa de esta guía práctica demuestra la destreza alcanzada en la aplicación lógica de estructuras de datos, condicionales, bucles y funciones. Confirma un dominio técnico sólido de los fundamentos de Python, garantizando una base adecuada para asumir retos analíticos de mayor complejidad.
+La resolución completa de esta guía práctica demuestra la destreza alcanzada en la aplicación lógica de estructuras de datos, condicionales, bucles y funciones. 
+Confirma un dominio técnico sólido de los fundamentos de Python, garantizando una base adecuada para asumir retos analíticos de mayor complejidad.
